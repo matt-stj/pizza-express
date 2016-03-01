@@ -103,6 +103,18 @@ it('should return a page that has the title of the pizza', (done) => {
   });
 });
 
+it('should return a page that also includes the toppings of the pizza', (done) => {
+  var pizza = app.locals.pizzas.testPizza;
+  var formattedToppings = pizza.toppings.map(function(topping){ return '<li>' + topping + '</li>'}).join("")
+
+  this.request.get('/pizzas/testPizza', (error, response) => {
+    if (error) { done(error); }
+    assert(response.body.includes(formattedToppings),
+           `"${response.body}" does not include "${formattedToppings}".`);
+    done();
+  });
+});
+
 });
 
 });
