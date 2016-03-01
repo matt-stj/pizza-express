@@ -23,7 +23,7 @@ app.post('/pizzas', (request, response) => {
   app.locals.pizzas[id] = request.body;
   response.sendStatus(201);
 });
-
+ 
 app.get('/pizzas/:id', (request, response) => {
   var pizza = app.locals.pizzas[request.params.id];
 
