@@ -1,0 +1,31 @@
+{
+  "name": "pizza-express",
+  "version": "1.0.0",
+  "description": "A place to think about pizzas",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-stj/pizza-express.git"
+  },
+  "keywords": [
+    "express",
+    "pizza",
+    "yum"
+  ],
+  "author": "Matt Stjernholm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matt-stj/pizza-express/issues"
+  },
+  "homepage": "https://github.com/matt-stj/pizza-express#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "request": "^2.69.0"
+  }
+}
