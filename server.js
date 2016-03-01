@@ -21,7 +21,6 @@ app.post('/pizzas', (request, response) => {
   var id = generateId();
 
   app.locals.pizzas[id] = request.body;
-
   response.sendStatus(201);
 });
 
